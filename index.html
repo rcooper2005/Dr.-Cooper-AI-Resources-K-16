@@ -36,11 +36,7 @@
             --radius-sm: 10px;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: 'DM Sans', sans-serif;
@@ -50,192 +46,56 @@
             overflow-x: hidden;
         }
 
-        h1, h2, h3, h4 {
-            font-family: 'Fraunces', serif;
-            font-weight: 600;
-            line-height: 1.3;
-        }
+        h1, h2, h3, h4 { font-family: 'Fraunces', serif; font-weight: 600; line-height: 1.3; }
 
         nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
+            position: fixed; top: 0; left: 0; right: 0;
             background: rgba(255, 251, 247, 0.95);
             backdrop-filter: blur(20px);
-            z-index: 1000;
-            padding: 1rem 2rem;
+            z-index: 1000; padding: 1rem 2rem;
             border-bottom: 1px solid rgba(26, 95, 122, 0.1);
         }
 
-        .nav-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+        .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
 
-        .logo {
-            font-family: 'Fraunces', serif;
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: var(--primary);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
+        .logo { font-family: 'Fraunces', serif; font-size: 1.4rem; font-weight: 700; color: var(--primary); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; }
 
-        .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.2rem;
-        }
+        .logo-icon { width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; }
 
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
 
-        .nav-links a {
-            text-decoration: none;
-            color: var(--dark);
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: color 0.3s ease;
-            position: relative;
-        }
+        .nav-links a { text-decoration: none; color: var(--dark); font-weight: 500; font-size: 0.95rem; transition: color 0.3s ease; position: relative; }
 
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--secondary);
-            transition: width 0.3s ease;
-        }
+        .nav-links a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--secondary); transition: width 0.3s ease; }
 
         .nav-links a:hover { color: var(--primary); }
         .nav-links a:hover::after { width: 100%; }
 
-        .hero {
-            padding: 8rem 2rem 4rem;
-            background: linear-gradient(180deg, var(--cream) 0%, var(--warm-white) 100%);
-            position: relative;
-            overflow: hidden;
-        }
+        .hero { padding: 8rem 2rem 4rem; background: linear-gradient(180deg, var(--cream) 0%, var(--warm-white) 100%); position: relative; overflow: hidden; }
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -20%;
-            width: 80%;
-            height: 150%;
-            background: radial-gradient(ellipse at center, rgba(87, 197, 182, 0.15) 0%, transparent 70%);
-            pointer-events: none;
-        }
+        .hero::before { content: ''; position: absolute; top: -50%; right: -20%; width: 80%; height: 150%; background: radial-gradient(ellipse at center, rgba(87, 197, 182, 0.15) 0%, transparent 70%); pointer-events: none; }
 
-        .hero-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
+        .hero-content { max-width: 1200px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
 
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: white;
-            padding: 0.5rem 1.25rem;
-            border-radius: 100px;
-            font-size: 0.9rem;
-            color: var(--primary);
-            font-weight: 500;
-            box-shadow: var(--shadow-soft);
-            margin-bottom: 1.5rem;
-            animation: fadeInUp 0.6s ease;
-        }
+        .hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: white; padding: 0.5rem 1.25rem; border-radius: 100px; font-size: 0.9rem; color: var(--primary); font-weight: 500; box-shadow: var(--shadow-soft); margin-bottom: 1.5rem; animation: fadeInUp 0.6s ease; }
 
-        .hero h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            color: var(--primary-dark);
-            margin-bottom: 1rem;
-            animation: fadeInUp 0.6s ease 0.1s both;
-        }
+        .hero h1 { font-size: clamp(2.5rem, 5vw, 4rem); color: var(--primary-dark); margin-bottom: 1rem; animation: fadeInUp 0.6s ease 0.1s both; }
 
-        .hero h1 span {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
+        .hero h1 span { background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 
-        .hero-subtitle {
-            font-size: 1.25rem;
-            color: var(--gray);
-            max-width: 700px;
-            margin: 0 auto 2rem;
-            animation: fadeInUp 0.6s ease 0.2s both;
-        }
+        .hero-subtitle { font-size: 1.25rem; color: var(--gray); max-width: 700px; margin: 0 auto 2rem; animation: fadeInUp 0.6s ease 0.2s both; }
 
-        .hero-stats {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            flex-wrap: wrap;
-            margin-top: 3rem;
-            animation: fadeInUp 0.6s ease 0.3s both;
-        }
+        .hero-stats { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; margin-top: 3rem; animation: fadeInUp 0.6s ease 0.3s both; }
 
         .stat { text-align: center; }
         .stat-number { font-family: 'Fraunces', serif; font-size: 2.5rem; font-weight: 700; color: var(--primary); }
         .stat-label { font-size: 0.9rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.05em; }
 
-        .grade-nav {
-            padding: 2rem;
-            background: white;
-            position: sticky;
-            top: 70px;
-            z-index: 100;
-            box-shadow: var(--shadow-soft);
-        }
+        .grade-nav { padding: 2rem; background: white; position: sticky; top: 70px; z-index: 100; box-shadow: var(--shadow-soft); }
 
-        .grade-nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
+        .grade-nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
 
-        .grade-btn {
-            padding: 0.75rem 1.5rem;
-            border: 2px solid var(--gray-light);
-            background: white;
-            border-radius: 100px;
-            font-family: 'DM Sans', sans-serif;
-            font-weight: 600;
-            font-size: 0.95rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
+        .grade-btn { padding: 0.75rem 1.5rem; border: 2px solid var(--gray-light); background: white; border-radius: 100px; font-family: 'DM Sans', sans-serif; font-weight: 600; font-size: 0.95rem; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: center; gap: 0.5rem; }
 
         .grade-btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-soft); }
         .grade-btn.elementary { border-color: var(--elementary-color); color: var(--elementary-color); }
@@ -254,16 +114,10 @@
         .section-header h2 { font-size: 2.25rem; color: var(--primary-dark); margin-bottom: 0.75rem; }
         .section-header p { color: var(--gray); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
 
-        .chart-container {
-            background: white;
-            border-radius: var(--radius);
-            padding: 2rem;
-            box-shadow: var(--shadow-soft);
-            margin-bottom: 4rem;
-            overflow-x: auto;
-        }
+        .chart-container { background: white; border-radius: var(--radius); padding: 2rem; box-shadow: var(--shadow-soft); margin-bottom: 4rem; overflow-x: auto; }
 
         .chart-title { font-size: 1.25rem; color: var(--primary-dark); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem; }
+
         .comparison-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
         .comparison-table th { background: var(--gray-light); padding: 1rem; text-align: left; font-weight: 600; color: var(--primary-dark); border-bottom: 2px solid var(--primary); }
         .comparison-table td { padding: 1rem; border-bottom: 1px solid var(--gray-light); vertical-align: middle; }
@@ -304,16 +158,7 @@
 
         .tools-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 1.5rem; }
 
-        .tool-card {
-            background: white;
-            border-radius: var(--radius);
-            padding: 1.75rem;
-            box-shadow: var(--shadow-soft);
-            transition: all 0.3s ease;
-            border: 1px solid transparent;
-            position: relative;
-            overflow: hidden;
-        }
+        .tool-card { background: white; border-radius: var(--radius); padding: 1.75rem; box-shadow: var(--shadow-soft); transition: all 0.3s ease; border: 1px solid transparent; position: relative; overflow: hidden; }
 
         .tool-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
         .tool-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; }
@@ -325,6 +170,7 @@
 
         .tool-card-header { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; }
         .tool-card-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0; }
+
         .tool-card-info h4 { font-size: 1.15rem; margin-bottom: 0.25rem; font-family: 'DM Sans', sans-serif; font-weight: 700; }
         .tool-card-info h4 a { color: var(--primary); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; transition: all 0.3s ease; }
         .tool-card-info h4 a:hover { color: var(--primary-dark); text-decoration-color: var(--accent); }
@@ -336,6 +182,7 @@
 
         .tool-uses { background: var(--gray-light); border-radius: var(--radius-sm); padding: 1rem; }
         .tool-uses-title { font-size: 0.8rem; font-weight: 600; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+
         .uses-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
         .use-column h5 { font-size: 0.75rem; font-weight: 600; margin-bottom: 0.25rem; display: flex; align-items: center; gap: 0.25rem; }
         .use-column.teacher h5 { color: var(--teacher-color); }
@@ -344,37 +191,24 @@
         .use-column li { padding: 0.15rem 0; position: relative; padding-left: 0.75rem; }
         .use-column li::before { content: '•'; position: absolute; left: 0; color: var(--secondary); }
 
-        .tool-help-link {
-            display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem;
-            padding: 0.4rem 0.75rem; background: var(--gray-light); border-radius: 20px;
-            font-size: 0.8rem; color: var(--primary); text-decoration: none; transition: all 0.3s ease; border: 1px solid transparent;
-        }
+        .tool-help-link { display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; padding: 0.4rem 0.75rem; background: var(--gray-light); border-radius: 20px; font-size: 0.8rem; color: var(--primary); text-decoration: none; transition: all 0.3s ease; border: 1px solid transparent; }
         .tool-help-link:hover { background: var(--primary); color: white; border-color: var(--primary); }
         .tool-help-link svg { width: 14px; height: 14px; }
 
         .tool-links-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.75rem; }
 
-        .tool-tutorial-link {
-            display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.4rem 0.75rem;
-            background: #e0f2fe; color: #0369a1; border-radius: 20px; font-size: 0.8rem;
-            font-weight: 500; text-decoration: none; transition: all 0.2s ease;
-        }
+        .tool-tutorial-link { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.4rem 0.75rem; background: #e0f2fe; color: #0369a1; border-radius: 20px; font-size: 0.8rem; font-weight: 500; text-decoration: none; transition: all 0.2s ease; }
         .tool-tutorial-link:hover { background: #0369a1; color: white; }
         .tool-tutorial-link svg { width: 14px; height: 14px; }
 
-        .tool-visit-link {
-            display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 1rem;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-            color: white; border-radius: 20px; font-size: 0.85rem; font-weight: 600;
-            text-decoration: none; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(26, 95, 122, 0.25);
-        }
+        .tool-visit-link { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.5rem 1rem; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; border-radius: 20px; font-size: 0.85rem; font-weight: 600; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(26, 95, 122, 0.25); }
         .tool-visit-link:hover { background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(26, 95, 122, 0.35); }
         .tool-visit-link svg { width: 16px; height: 16px; }
 
         .best-practices { background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%); border-radius: var(--radius); padding: 3rem; color: white; margin: 4rem 0; }
         .best-practices h2 { text-align: center; margin-bottom: 2rem; font-size: 1.75rem; }
         .practices-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
-        .practice-card { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 1.5rem; border: 1px solid rgba(255,255,255,0.2); }
+        .practice-card { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: var(--radius-sm); padding: 1.5rem; border: 1px solid rgba(255, 255, 255, 0.2); }
         .practice-card h4 { font-family: 'DM Sans', sans-serif; font-size: 1rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
         .practice-card p { font-size: 0.9rem; opacity: 0.9; line-height: 1.6; }
 
@@ -400,9 +234,9 @@
         footer { background: var(--primary-dark); color: white; padding: 3rem 2rem; text-align: center; }
         .footer-content { max-width: 800px; margin: 0 auto; }
         .footer-content h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
-        .footer-content p { opacity: 0.8; margin-bottom: 1rem; }
+        .footer-content p { opacity: 0.8; margin-bottom: 1.5rem; }
         .footer-contact a { color: var(--secondary); text-decoration: none; font-weight: 500; }
-        .footer-copyright { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.85rem; line-height: 2; }
+        .footer-copyright { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.1); font-size: 0.85rem; opacity: 0.9; line-height: 2; }
         .footer-copyright a { color: #a5b4fc; text-decoration: none; }
         .footer-copyright a:hover { text-decoration: underline; }
         .footer-copyright img { vertical-align: middle; }
@@ -489,13 +323,13 @@
                     <tr><th>Tool</th><th>Grade Levels</th><th>Audience</th><th>Primary Use</th><th>Free Tier</th><th>Account Required</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td><div class="tool-name-cell"><div class="tool-icon bg-adobe" style="color:white;">🎨</div>Adobe Express</div></td><td><span class="grade-badge elem">K-5</span><span class="grade-badge mid">6-8</span><span class="grade-badge high-sch">9-12</span><span class="grade-badge college">College</span></td><td><span class="audience-badge both">Both</span></td><td>Design &amp; Graphics</td><td class="check-icon">✓</td><td>Yes (free edu)</td></tr>
-                    <tr><td><div class="tool-name-cell"><div class="tool-icon bg-notebook" style="color:white;">📓</div>NotebookLM</div></td><td><span class="grade-badge mid">6-8</span><span class="grade-badge high-sch">9-12</span><span class="grade-badge college">College</span></td><td><span class="audience-badge both">Both</span></td><td>Research &amp; Audio</td><td class="check-icon">✓</td><td>Google account</td></tr>
+                    <tr><td><div class="tool-name-cell"><div class="tool-icon bg-adobe" style="color:white;">🎨</div>Adobe Express</div></td><td><span class="grade-badge elem">K-5</span><span class="grade-badge mid">6-8</span><span class="grade-badge high-sch">9-12</span><span class="grade-badge college">College</span></td><td><span class="audience-badge both">Both</span></td><td>Design & Graphics</td><td class="check-icon">✓</td><td>Yes (free edu)</td></tr>
+                    <tr><td><div class="tool-name-cell"><div class="tool-icon bg-notebook" style="color:white;">📓</div>NotebookLM</div></td><td><span class="grade-badge mid">6-8</span><span class="grade-badge high-sch">9-12</span><span class="grade-badge college">College</span></td><td><span class="audience-badge both">Both</span></td><td>Research & Audio</td><td class="check-icon">✓</td><td>Google account</td></tr>
                     <tr><td><div class="tool-name-cell"><div class="tool-icon bg-gemini" style="color:white;">✨</div>Google Gemini</div></td><td><span class="grade-badge mid">6-8</span><span class="grade-badge high-sch">9-12</span><span class="grade-badge college">College</span></td><td><span class="audience-badge teacher">Teacher</span></td><td>Workspace Integration</td><td class="check-icon">✓</td><td>Google account</td></tr>
                     <tr><td><div class="tool-name-cell"><div class="tool-icon bg-copilot" style="color:white;">🪟</div>MS Copilot</div></td><td><span class="grade-badge mid">6-8</span><span class="grade-badge high-sch">9-12</span><span class="grade-badge college">College</span></td><td><span class="audience-badge teacher">Teacher</span></td><td>Microsoft 365</td><td class="check-icon">✓</td><td>Microsoft account</td></tr>
                     <tr><td><div class="tool-name-cell"><div class="tool-icon bg-perplexity" style="color:white;">🔍</div>Perplexity</div></td><td><span class="grade-badge mid">6-8</span><span class="grade-badge high-sch">9-12</span><span class="grade-badge college">College</span></td><td><span class="audience-badge both">Both</span></td><td>Research + Citations</td><td class="check-icon">✓</td><td>Optional</td></tr>
                     <tr><td><div class="tool-name-cell"><div class="tool-icon bg-schoolai" style="color:white;">🏫</div>SchoolAI</div></td><td><span class="grade-badge elem">K-5</span><span class="grade-badge mid">6-8</span><span class="grade-badge high-sch">9-12</span></td><td><span class="audience-badge both">Both</span></td><td>Custom AI Tutors</td><td class="check-icon">✓</td><td>Yes</td></tr>
-                    <tr><td><div class="tool-name-cell"><div class="tool-icon bg-claude" style="color:white;">🧠</div>Claude AI</div></td><td><span class="grade-badge high-sch">9-12</span><span class="grade-badge college">College</span></td><td><span class="audience-badge teacher">Teacher</span></td><td>Analysis &amp; Writing</td><td class="check-icon">✓</td><td>Yes (18+)</td></tr>
+                    <tr><td><div class="tool-name-cell"><div class="tool-icon bg-claude" style="color:white;">🧠</div>Claude AI</div></td><td><span class="grade-badge high-sch">9-12</span><span class="grade-badge college">College</span></td><td><span class="audience-badge teacher">Teacher</span></td><td>Analysis & Writing</td><td class="check-icon">✓</td><td>Yes (18+)</td></tr>
                     <tr><td><div class="tool-name-cell"><div class="tool-icon bg-chatgpt" style="color:white;">💬</div>ChatGPT</div></td><td><span class="grade-badge high-sch">9-12</span><span class="grade-badge college">College</span></td><td><span class="audience-badge teacher">Teacher</span></td><td>Versatile Assistant</td><td class="check-icon">✓</td><td>Yes (13+)</td></tr>
                     <tr><td><div class="tool-name-cell"><div class="tool-icon bg-magic" style="color:white;">🪄</div>MagicSchool</div></td><td><span class="grade-badge elem">K-5</span><span class="grade-badge mid">6-8</span><span class="grade-badge high-sch">9-12</span><span class="grade-badge college">College</span></td><td><span class="audience-badge teacher">Teacher</span></td><td>80+ Edu Tools</td><td class="check-icon">✓</td><td>Yes</td></tr>
                     <tr><td><div class="tool-name-cell"><div class="tool-icon bg-diffit" style="color:white;">📖</div>Diffit</div></td><td><span class="grade-badge elem">K-5</span><span class="grade-badge mid">6-8</span><span class="grade-badge high-sch">9-12</span></td><td><span class="audience-badge teacher">Teacher</span></td><td>Text Differentiation</td><td class="check-icon">✓</td><td>Yes</td></tr>
@@ -508,7 +342,414 @@
             </table>
         </section>
 
-        <!-- The full tool cards and sections from the original file are preserved here -->
+        <!-- ELEMENTARY SECTION -->
+        <section id="elementary" class="grade-section" data-grade="elementary">
+            <div class="grade-section-header elementary">
+                <div class="grade-icon elementary">🌱</div>
+                <div class="grade-section-title">
+                    <h3>Elementary School (K-5)</h3>
+                    <p>Age-appropriate AI tools with visual interfaces and safety features</p>
+                </div>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card elementary">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-schoolai" style="color:white;">🏫</div><div class="tool-card-info"><h4><a href="https://schoolai.com" target="_blank">SchoolAI</a></h4><span class="tool-card-tagline">Custom AI Tutors (Spaces)</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge elem">K-5</span><span class="audience-badge both">Teachers & Students</span></div>
+                    <p class="tool-card-description">Create safe, customized AI tutoring experiences called "Spaces" that students can interact with directly. Teachers control guardrails and monitor all interactions.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Create reading buddies</li><li>Build math helpers</li><li>Design character chats</li><li>Monitor conversations</li></ul></div><div class="use-column student"><h5>👧 Students</h5><ul><li>Ask questions safely</li><li>Practice reading</li><li>Get homework help</li><li>Explore topics</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://schoolai.com" target="_blank" class="tool-visit-link">Visit SchoolAI</a><a href="https://help.schoolai.com" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@SchoolAI" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card elementary">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-curipod" style="color:white;">🎮</div><div class="tool-card-info"><h4><a href="https://curipod.com" target="_blank">Curipod</a></h4><span class="tool-card-tagline">Interactive Lesson Slides</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge elem">K-5</span><span class="audience-badge both">Teachers & Students</span></div>
+                    <p class="tool-card-description">Create engaging, interactive lessons with polls, drawings, word clouds, and Q&A. AI generates lesson content and provides real-time feedback during class.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Generate lessons fast</li><li>Create polls & drawings</li><li>View live responses</li><li>Check understanding</li></ul></div><div class="use-column student"><h5>👧 Students</h5><ul><li>Draw responses</li><li>Vote in polls</li><li>Share ideas</li><li>Participate live</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://curipod.com" target="_blank" class="tool-visit-link">Visit Curipod</a><a href="https://help.curipod.com" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@curipod" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card elementary">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-quizizz" style="color:white;">🎯</div><div class="tool-card-info"><h4><a href="https://quizizz.com" target="_blank">Quizizz</a></h4><span class="tool-card-tagline">AI Quiz Actions</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge elem">K-5</span><span class="audience-badge both">Teachers & Students</span></div>
+                    <p class="tool-card-description">Gamified quizzes with AI-powered differentiation. Adjust difficulty, simplify language, and translate questions automatically.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Generate quiz questions</li><li>Adjust reading levels</li><li>Translate content</li><li>Track progress</li></ul></div><div class="use-column student"><h5>👧 Students</h5><ul><li>Play quiz games</li><li>Compete with class</li><li>Earn power-ups</li><li>Practice at home</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://quizizz.com" target="_blank" class="tool-visit-link">Visit Quizizz</a><a href="https://support.quizizz.com" target="_blank" class="tool-help-link">Help & Support</a><a href="https://support.quizizz.com/hc/en-us" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card elementary">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-adobe" style="color:white;">🎨</div><div class="tool-card-info"><h4><a href="https://adobe.com/education/express" target="_blank">Adobe Express</a></h4><span class="tool-card-tagline">Design & Graphics</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge elem">K-5</span><span class="audience-badge both">Teachers & Students</span></div>
+                    <p class="tool-card-description">AI-powered design tool with kid-friendly templates. Create posters, videos, presentations, and more. Free for education with safe content filters.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Create class posters</li><li>Design newsletters</li><li>Make video lessons</li><li>Build presentations</li></ul></div><div class="use-column student"><h5>👧 Students</h5><ul><li>Create book reports</li><li>Design projects</li><li>Make comic strips</li><li>Build digital art</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://adobe.com/education/express" target="_blank" class="tool-visit-link">Visit Adobe Express</a><a href="https://helpx.adobe.com/express.html" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@AdobeExpress" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card elementary">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-padlet" style="color:white;">📌</div><div class="tool-card-info"><h4><a href="https://padlet.com" target="_blank">Padlet</a></h4><span class="tool-card-tagline">Magic Padlet Boards</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge elem">K-5</span><span class="audience-badge both">Teachers & Students</span></div>
+                    <p class="tool-card-description">Collaborative digital bulletin boards with AI-powered "Magic Padlet" that creates boards, timelines, and maps from a simple prompt.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Create brainstorm boards</li><li>Build timelines</li><li>Collect student work</li><li>Exit ticket walls</li></ul></div><div class="use-column student"><h5>👧 Students</h5><ul><li>Post ideas & images</li><li>Collaborate with class</li><li>Share projects</li><li>Comment on posts</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://padlet.com" target="_blank" class="tool-visit-link">Visit Padlet</a><a href="https://padlet.help" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@padlet" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card elementary">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-nearpod" style="color:white;">📝</div><div class="tool-card-info"><h4><a href="https://nearpod.com" target="_blank">Nearpod</a></h4><span class="tool-card-tagline">AI Question Generator</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge elem">K-5</span><span class="audience-badge both">Teachers & Students</span></div>
+                    <p class="tool-card-description">Interactive presentations with AI-generated quiz questions. Includes VR field trips, gamification, and real-time student engagement tools.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Auto-generate questions</li><li>Add VR experiences</li><li>Pace live lessons</li><li>Track understanding</li></ul></div><div class="use-column student"><h5>👧 Students</h5><ul><li>Take virtual trips</li><li>Draw responses</li><li>Collaborate on boards</li><li>Answer polls</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://nearpod.com" target="_blank" class="tool-visit-link">Visit Nearpod</a><a href="https://support.nearpod.com" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@Nearpod" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card elementary">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-magic" style="color:white;">🪄</div><div class="tool-card-info"><h4><a href="https://magicschool.ai" target="_blank">MagicSchool AI</a></h4><span class="tool-card-tagline">80+ Education Tools</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge elem">K-5</span><span class="audience-badge teacher">Teacher Only</span></div>
+                    <p class="tool-card-description">The Swiss Army knife for teachers! 80+ AI tools for lesson plans, rubrics, IEPs, assessments, parent communications, and more—all in one platform.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Create lesson plans</li><li>Generate assessments</li><li>Write parent emails</li><li>Build IEP goals</li></ul></div><div class="use-column student"><h5>👧 Students</h5><ul><li>Not for direct student use</li><li>Benefits from teacher-created materials</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://magicschool.ai" target="_blank" class="tool-visit-link">Visit MagicSchool AI</a><a href="https://help.magicschool.ai" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@MagicSchoolAI" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card elementary">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-diffit" style="color:white;">📖</div><div class="tool-card-info"><h4><a href="https://web.diffit.me" target="_blank">Diffit</a></h4><span class="tool-card-tagline">Text Differentiation</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge elem">K-5</span><span class="audience-badge teacher">Teacher Only</span></div>
+                    <p class="tool-card-description">Instantly adapt any text to multiple reading levels with vocabulary support and comprehension questions. Essential for differentiated instruction.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Adjust reading levels</li><li>Add vocabulary lists</li><li>Generate questions</li><li>Create summaries</li></ul></div><div class="use-column student"><h5>👧 Students</h5><ul><li>Read level-appropriate text</li><li>Learn new vocabulary</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://web.diffit.me" target="_blank" class="tool-visit-link">Visit Diffit</a><a href="https://support.diffit.me" target="_blank" class="tool-help-link">Help & Support</a><a href="https://support.diffit.me/hc/en-us" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card elementary">
+                    <div class="tool-card-header"><div class="tool-card-icon" style="background: #14bf96; color:white;">🎓</div><div class="tool-card-info"><h4><a href="https://www.khanmigo.ai" target="_blank">Khanmigo</a></h4><span class="tool-card-tagline">AI Tutor by Khan Academy</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge elem">K-5</span><span class="audience-badge both">Teachers & Students</span></div>
+                    <p class="tool-card-description">AI-powered tutor that guides students through problems using Socratic questioning. Doesn't give answers directly—helps students think critically.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Generate lesson plans</li><li>Create rubrics</li><li>Monitor student progress</li><li>Get teaching ideas</li></ul></div><div class="use-column student"><h5>👧 Students</h5><ul><li>Get homework help</li><li>Practice math concepts</li><li>Writing feedback</li><li>Explore subjects</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://www.khanmigo.ai" target="_blank" class="tool-visit-link">Visit Khanmigo</a><a href="https://support.khanacademy.org/hc/en-us/categories/23407636274573-Khanmigo" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@khanacademy" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card elementary">
+                    <div class="tool-card-header"><div class="tool-card-icon" style="background: #00c4cc; color:white;">🎨</div><div class="tool-card-info"><h4><a href="https://www.canva.com/education/" target="_blank">Canva AI</a></h4><span class="tool-card-tagline">AI-Powered Design for Education</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge elem">K-5</span><span class="audience-badge both">Teachers & Students</span></div>
+                    <p class="tool-card-description">Free for K-12 educators with AI features including Magic Write for content generation, AI image creation, and instant design templates.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Create presentations</li><li>Design worksheets</li><li>Generate quizzes</li><li>Make visual aids</li></ul></div><div class="use-column student"><h5>👧 Students</h5><ul><li>Create posters</li><li>Design projects</li><li>Make videos</li><li>Build portfolios</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://www.canva.com/education/" target="_blank" class="tool-visit-link">Visit Canva AI</a><a href="https://www.canva.com/help/" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@canva" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card elementary">
+                    <div class="tool-card-header"><div class="tool-card-icon" style="background: #f97316; color:white;">📝</div><div class="tool-card-info"><h4><a href="https://www.conker.ai" target="_blank">Conker</a></h4><span class="tool-card-tagline">AI Quiz Generator</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge elem">K-5</span><span class="audience-badge teacher">Teachers</span></div>
+                    <p class="tool-card-description">Generate standards-aligned quizzes in seconds with AI. Export to Google Forms or Canvas. Features read-aloud accessibility and multiple question types.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Create quick quizzes</li><li>Generate from standards</li><li>Export to Google Forms</li><li>Differentiate assessments</li></ul></div><div class="use-column student"><h5>👧 Students</h5><ul><li>Take interactive quizzes</li><li>Use read-aloud feature</li><li>Get instant feedback</li><li>Practice skills</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://www.conker.ai" target="_blank" class="tool-visit-link">Visit Conker</a><a href="https://support.conker.ai/hc/en-us" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.conker.ai/learn" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card elementary">
+                    <div class="tool-card-header"><div class="tool-card-icon" style="background: #6366f1; color:white;">📚</div><div class="tool-card-info"><h4><a href="https://www.eduaide.ai" target="_blank">Eduaide.AI</a></h4><span class="tool-card-tagline">AI Lesson Planning Suite</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge elem">K-5</span><span class="audience-badge teacher">Teachers</span></div>
+                    <p class="tool-card-description">100+ AI-powered tools for lesson plans, graphic organizers, educational games, and assessments. Built by teachers with research-based instructional frameworks like 5E and UDL.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Generate 5E lessons</li><li>Create graphic organizers</li><li>Build educational games</li><li>Differentiate content</li></ul></div><div class="use-column student"><h5>👧 Students</h5><ul><li>Engage with activities</li><li>Play learning games</li><li>Use organizers</li><li>Complete assessments</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://www.eduaide.ai" target="_blank" class="tool-visit-link">Visit Eduaide.AI</a><a href="https://www.eduaide.ai/faq" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.eduaide.ai/blog" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card elementary">
+                    <div class="tool-card-header"><div class="tool-card-icon" style="background: #059669; color:white;">🤖</div><div class="tool-card-info"><h4><a href="https://mizou.com" target="_blank">Mizou</a></h4><span class="tool-card-tagline">AI Chatbot Builder for Teachers</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge elem">K-5</span><span class="audience-badge both">Teachers & Students</span></div>
+                    <p class="tool-card-description">Create custom AI chatbots for safe student interactions. Teachers control prompts, rules, and guardrails. Students chat without needing accounts.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Create custom chatbots</li><li>Set conversation rules</li><li>Monitor sessions</li><li>Review transcripts</li></ul></div><div class="use-column student"><h5>👧 Students</h5><ul><li>Chat with characters</li><li>Practice languages</li><li>Role-play scenarios</li><li>Get tutoring help</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://mizou.com" target="_blank" class="tool-visit-link">Visit Mizou</a><a href="https://mizou.com/education" target="_blank" class="tool-help-link">Help & Support</a><a href="https://mizou.com/education" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card elementary">
+                    <div class="tool-card-header"><div class="tool-card-icon" style="background: linear-gradient(135deg, #6366f1, #8b5cf6); color:white;">📝</div><div class="tool-card-info"><h4><a href="https://www.formative.com" target="_blank">Formative</a></h4><span class="tool-card-tagline">Real-Time Assessment Platform</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge elem">K-5</span><span class="grade-badge mid">6-8</span><span class="grade-badge high-sch">9-12</span><span class="audience-badge both">Teachers & Students</span></div>
+                    <p class="tool-card-description">AI-powered instructional and assessment platform. See student responses in real-time, provide instant feedback, and track mastery with auto-grading features.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Create interactive lessons</li><li>See responses in real-time</li><li>Auto-grade assessments</li><li>Track student mastery</li></ul></div><div class="use-column student"><h5>👧 Students</h5><ul><li>Respond on any device</li><li>Get instant feedback</li><li>Show work with drawings</li><li>Self-assess progress</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://www.formative.com" target="_blank" class="tool-visit-link">Visit Formative</a><a href="https://help.formative.com/en/" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.formative.com/resources" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card elementary">
+                    <div class="tool-card-header"><div class="tool-card-icon" style="background: linear-gradient(135deg, #22c55e, #16a34a); color:white;">🍐</div><div class="tool-card-info"><h4><a href="https://www.peardeck.com" target="_blank">Pear Deck</a></h4><span class="tool-card-tagline">Interactive Presentations</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge elem">K-5</span><span class="grade-badge mid">6-8</span><span class="grade-badge high-sch">9-12</span><span class="audience-badge both">Teachers & Students</span></div>
+                    <p class="tool-card-description">Transform Google Slides into interactive lessons with AI-powered Instant Pear Decks. Students respond on their devices, and teachers see engagement in real-time.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>AI-generate lessons in 30 sec</li><li>Add interactive questions</li><li>See student responses live</li><li>Works with Google Slides</li></ul></div><div class="use-column student"><h5>👧 Students</h5><ul><li>Respond anonymously</li><li>Draw and type answers</li><li>Participate safely</li><li>Join from any device</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://www.peardeck.com" target="_blank" class="tool-visit-link">Visit Pear Deck</a><a href="https://support.goguardian.com/s/pear-deck" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.peardeck.com/help-videos" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MIDDLE SCHOOL SECTION -->
+        <section id="middle" class="grade-section" data-grade="middle">
+            <div class="grade-section-header middle">
+                <div class="grade-icon middle">🔬</div>
+                <div class="grade-section-title">
+                    <h3>Middle School (6-8)</h3>
+                    <p>Research skills, collaboration, and guided AI exploration</p>
+                </div>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card middle">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-notebook" style="color:white;">📓</div><div class="tool-card-info"><h4><a href="https://notebooklm.google" target="_blank">NotebookLM</a></h4><span class="tool-card-tagline">Research & Audio Podcasts</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge mid">6-8</span><span class="audience-badge both">Teachers & Students</span></div>
+                    <p class="tool-card-description">Upload documents and get AI analysis, summaries, and automatically generated audio podcasts from your sources. Great for research projects!</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Analyze curriculum docs</li><li>Create audio overviews</li><li>Summarize readings</li><li>Cross-reference sources</li></ul></div><div class="use-column student"><h5>🧑‍🎓 Students</h5><ul><li>Research projects</li><li>Create study guides</li><li>Listen to podcasts</li><li>Organize notes</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://notebooklm.google" target="_blank" class="tool-visit-link">Visit NotebookLM</a><a href="https://support.google.com/notebooklm" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/results?search_query=NotebookLM+tutorial" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card middle">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-perplexity" style="color:white;">🔍</div><div class="tool-card-info"><h4><a href="https://perplexity.ai" target="_blank">Perplexity AI</a></h4><span class="tool-card-tagline">Research + Citations</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge mid">6-8</span><span class="audience-badge both">Teachers & Students</span></div>
+                    <p class="tool-card-description">AI-powered search engine that provides answers with citations. Academic mode searches scholarly sources. Perfect for teaching research skills.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Find current research</li><li>Verify information</li><li>Model citation use</li><li>Create fact-checked content</li></ul></div><div class="use-column student"><h5>🧑‍🎓 Students</h5><ul><li>Research with sources</li><li>Verify claims</li><li>Find academic articles</li><li>Learn to cite</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://perplexity.ai" target="_blank" class="tool-visit-link">Visit Perplexity AI</a><a href="https://www.perplexity.ai/hub/faq" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.perplexity.ai/hub" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card middle">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-schoolai" style="color:white;">🏫</div><div class="tool-card-info"><h4><a href="https://schoolai.com" target="_blank">SchoolAI</a></h4><span class="tool-card-tagline">Custom AI Tutors (Spaces)</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge mid">6-8</span><span class="audience-badge both">Teachers & Students</span></div>
+                    <p class="tool-card-description">Create subject-specific AI tutors for algebra, writing, science concepts, and more. Students interact in a safe, monitored environment.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Build subject tutors</li><li>Create writing coaches</li><li>Design Socratic guides</li><li>Review transcripts</li></ul></div><div class="use-column student"><h5>🧑‍🎓 Students</h5><ul><li>Get math help</li><li>Practice writing</li><li>Explore concepts</li><li>Prepare for tests</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://schoolai.com" target="_blank" class="tool-visit-link">Visit SchoolAI</a><a href="https://help.schoolai.com" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@SchoolAI" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card middle">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-gemini" style="color:white;">✨</div><div class="tool-card-info"><h4><a href="https://gemini.google.com" target="_blank">Google Gemini</a></h4><span class="tool-card-tagline">Workspace Integration</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge mid">6-8</span><span class="audience-badge teacher">Teacher Only</span></div>
+                    <p class="tool-card-description">Integrated into Google Workspace for seamless lesson creation. Generate content in Docs, Slides, and Sheets.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Create in Google Docs</li><li>Generate slide content</li><li>Analyze spreadsheet data</li><li>Draft communications</li></ul></div><div class="use-column student"><h5>🧑‍🎓 Students</h5><ul><li>Not recommended for direct use at this level</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://gemini.google.com" target="_blank" class="tool-visit-link">Visit Google Gemini</a><a href="https://support.google.com/gemini" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@Google" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card middle">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-copilot" style="color:white;">🪟</div><div class="tool-card-info"><h4><a href="https://copilot.microsoft.com" target="_blank">Microsoft Copilot</a></h4><span class="tool-card-tagline">Microsoft 365 Integration</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge mid">6-8</span><span class="audience-badge teacher">Teacher Only</span></div>
+                    <p class="tool-card-description">AI assistant built into Microsoft 365. Create content in Word, PowerPoint, Excel, and Outlook. Ideal for schools using Microsoft ecosystem.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Draft in Word</li><li>Create PowerPoints</li><li>Analyze Excel data</li><li>Write emails</li></ul></div><div class="use-column student"><h5>🧑‍🎓 Students</h5><ul><li>Not recommended for direct use at this level</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://copilot.microsoft.com" target="_blank" class="tool-visit-link">Visit Microsoft Copilot</a><a href="https://support.microsoft.com/copilot" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@Microsoft365" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card middle">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-quizlet" style="color:white;">🎴</div><div class="tool-card-info"><h4><a href="https://quizlet.com" target="_blank">Quizlet</a></h4><span class="tool-card-tagline">Magic Notes</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge mid">6-8</span><span class="audience-badge both">Teachers & Students</span></div>
+                    <p class="tool-card-description">Transform notes into flashcards, practice tests, and study guides automatically with Magic Notes.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Create class sets</li><li>Track student progress</li><li>Share vocabulary lists</li><li>Assign practice</li></ul></div><div class="use-column student"><h5>🧑‍🎓 Students</h5><ul><li>Create flashcards from notes</li><li>Generate practice tests</li><li>Study with Learn mode</li><li>Compete with classmates</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://quizlet.com" target="_blank" class="tool-visit-link">Visit Quizlet</a><a href="https://help.quizlet.com" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@quizlet" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card middle">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-magic" style="color:white;">🪄</div><div class="tool-card-info"><h4><a href="https://magicschool.ai" target="_blank">MagicSchool AI</a></h4><span class="tool-card-tagline">80+ Education Tools</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge mid">6-8</span><span class="audience-badge teacher">Teacher Only</span></div>
+                    <p class="tool-card-description">Perfect for middle school teachers juggling multiple subjects. Create differentiated materials, behavior plans, and engaging activities in minutes.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Create project rubrics</li><li>Generate reading guides</li><li>Write behavior plans</li><li>Design assessments</li></ul></div><div class="use-column student"><h5>🧑‍🎓 Students</h5><ul><li>Benefit from differentiated materials</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://magicschool.ai" target="_blank" class="tool-visit-link">Visit MagicSchool AI</a><a href="https://help.magicschool.ai" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@MagicSchoolAI" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card middle">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-diffit" style="color:white;">📖</div><div class="tool-card-info"><h4><a href="https://web.diffit.me" target="_blank">Diffit</a></h4><span class="tool-card-tagline">Text Differentiation</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge mid">6-8</span><span class="audience-badge teacher">Teacher Only</span></div>
+                    <p class="tool-card-description">Essential for content-area teachers. Adapt complex texts for diverse reading levels while maintaining content integrity. Supports ELL and special education needs.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Adapt science texts</li><li>Simplify history readings</li><li>Create tiered materials</li><li>Support ELL students</li></ul></div><div class="use-column student"><h5>🧑‍🎓 Students</h5><ul><li>Access grade-level content at appropriate reading level</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://web.diffit.me" target="_blank" class="tool-visit-link">Visit Diffit</a><a href="https://support.diffit.me" target="_blank" class="tool-help-link">Help & Support</a><a href="https://support.diffit.me/hc/en-us" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card middle">
+                    <div class="tool-card-header"><div class="tool-card-icon" style="background: #2563eb; color:white;">⚡</div><div class="tool-card-info"><h4><a href="https://www.briskteaching.com" target="_blank">Brisk Teaching</a></h4><span class="tool-card-tagline">AI Chrome Extension for Teachers</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge mid">6-8</span><span class="audience-badge teacher">Teachers</span></div>
+                    <p class="tool-card-description">Free Chrome extension that works inside Google Docs, YouTube, and websites. Give feedback, level text, create quizzes, and generate resources without leaving your workflow.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Give instant feedback</li><li>Level reading text</li><li>Create from YouTube</li><li>Generate resources</li></ul></div><div class="use-column student"><h5>🧑 Students</h5><ul><li>Receive feedback</li><li>Access leveled texts</li><li>Complete activities</li><li>Use Boost features</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://www.briskteaching.com" target="_blank" class="tool-visit-link">Visit Brisk Teaching</a><a href="https://www.briskteaching.com/faq" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.briskteaching.com/getting-started-with-brisk-teaching" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card middle">
+                    <div class="tool-card-header"><div class="tool-card-icon" style="background: #8b5cf6; color:white;">🎬</div><div class="tool-card-info"><h4><a href="https://gamma.app" target="_blank">Gamma</a></h4><span class="tool-card-tagline">AI Presentation Maker</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge mid">6-8</span><span class="audience-badge both">Teachers & Students</span></div>
+                    <p class="tool-card-description">Create stunning presentations, websites, and documents from a simple prompt. AI handles design automatically—just focus on your content.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Create lesson slides</li><li>Build course materials</li><li>Design handouts</li><li>Make class websites</li></ul></div><div class="use-column student"><h5>🧑 Students</h5><ul><li>Create presentations</li><li>Build project reports</li><li>Design portfolios</li><li>Make study guides</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://gamma.app" target="_blank" class="tool-visit-link">Visit Gamma</a><a href="https://gamma.app/docs" target="_blank" class="tool-help-link">Help & Support</a><a href="https://gamma.app/docs" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card middle">
+                    <div class="tool-card-header"><div class="tool-card-icon" style="background: #ea580c; color:white;">📊</div><div class="tool-card-info"><h4><a href="https://www.slidesai.io" target="_blank">SlidesAI</a></h4><span class="tool-card-tagline">AI for Google Slides</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge mid">6-8</span><span class="audience-badge both">Teachers & Students</span></div>
+                    <p class="tool-card-description">Google Slides add-on that turns text into professional presentations. Enter your topic or paste notes, and AI creates structured slides with visuals instantly.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Create lectures fast</li><li>Turn notes to slides</li><li>Generate visuals</li><li>Save prep time</li></ul></div><div class="use-column student"><h5>🧑 Students</h5><ul><li>Build presentations</li><li>Create project decks</li><li>Organize research</li><li>Design reports</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://www.slidesai.io" target="_blank" class="tool-visit-link">Visit SlidesAI</a><a href="https://help.slidesai.io" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.slidesai.io/guides" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card middle">
+                    <div class="tool-card-header"><div class="tool-card-icon" style="background: linear-gradient(135deg, #f59e0b, #d97706); color:white;">✏️</div><div class="tool-card-info"><h4><a href="https://twee.com" target="_blank">Twee</a></h4><span class="tool-card-tagline">ELA Lesson Generator</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge mid">6-8</span><span class="grade-badge high-sch">9-12</span><span class="audience-badge teacher">Teachers</span></div>
+                    <p class="tool-card-description">AI-powered tool for English/ELA teachers. Generate CEFR-aligned reading passages, vocabulary exercises, grammar activities, and comprehension questions in seconds.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Generate reading passages</li><li>Create vocabulary exercises</li><li>Build grammar activities</li><li>Make YouTube video quizzes</li></ul></div><div class="use-column student"><h5>👧 Students</h5><ul><li>Practice at CEFR levels</li><li>Complete fill-in-gap exercises</li><li>Build vocabulary skills</li><li>Improve writing abilities</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://twee.com" target="_blank" class="tool-visit-link">Visit Twee</a><a href="https://twee.com/tools" target="_blank" class="tool-help-link">Help & Support</a><a href="https://twee.com/esl-lesson-plans" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HIGH SCHOOL SECTION -->
+        <section id="high" class="grade-section" data-grade="high">
+            <div class="grade-section-header high">
+                <div class="grade-icon high">🎓</div>
+                <div class="grade-section-title">
+                    <h3>High School (9-12)</h3>
+                    <p>Advanced research, analysis, and preparation for college and career</p>
+                </div>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card high">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-claude" style="color:white;">🧠</div><div class="tool-card-info"><h4><a href="https://claude.ai" target="_blank">Claude AI</a></h4><span class="tool-card-tagline">Analysis & Writing</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge high-sch">9-12</span><span class="audience-badge teacher">Teacher (18+ required)</span></div>
+                    <p class="tool-card-description">Known for nuanced analysis, thoughtful writing, and document review. Excellent for creating case studies, analyzing literature, and developing complex assessments.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Create case studies</li><li>Analyze literature</li><li>Develop rubrics</li><li>Draft complex documents</li></ul></div><div class="use-column student"><h5>🎓 Students</h5><ul><li>18+ age requirement</li><li>Use teacher-created materials</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://claude.ai" target="_blank" class="tool-visit-link">Visit Claude AI</a><a href="https://support.anthropic.com" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@anthropic-ai" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card high">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-chatgpt" style="color:white;">💬</div><div class="tool-card-info"><h4><a href="https://chatgpt.com" target="_blank">ChatGPT</a></h4><span class="tool-card-tagline">Versatile Assistant</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge high-sch">9-12</span><span class="audience-badge teacher">Teacher (13+ with restrictions)</span></div>
+                    <p class="tool-card-description">The most widely-known AI assistant. Versatile for brainstorming, drafting, problem-solving, and general assistance.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Brainstorm lessons</li><li>Create examples</li><li>Draft communications</li><li>Model AI use</li></ul></div><div class="use-column student"><h5>🎓 Students</h5><ul><li>13+ with parental consent</li><li>Supervised use only</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://chatgpt.com" target="_blank" class="tool-visit-link">Visit ChatGPT</a><a href="https://help.openai.com" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@OpenAI" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card high">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-notebook" style="color:white;">📓</div><div class="tool-card-info"><h4><a href="https://notebooklm.google" target="_blank">NotebookLM</a></h4><span class="tool-card-tagline">Research & Audio Podcasts</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge high-sch">9-12</span><span class="audience-badge both">Teachers & Students</span></div>
+                    <p class="tool-card-description">Perfect for AP courses and research papers. Upload multiple sources for synthesis, generate comprehensive study guides, and create engaging audio summaries.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Create course podcasts</li><li>Analyze primary sources</li><li>Build study resources</li><li>Cross-reference texts</li></ul></div><div class="use-column student"><h5>🎓 Students</h5><ul><li>Research papers</li><li>AP exam prep</li><li>Source analysis</li><li>Study podcasts</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://notebooklm.google" target="_blank" class="tool-visit-link">Visit NotebookLM</a><a href="https://support.google.com/notebooklm" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/results?search_query=NotebookLM+tutorial" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card high">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-perplexity" style="color:white;">🔍</div><div class="tool-card-info"><h4><a href="https://perplexity.ai" target="_blank">Perplexity AI</a></h4><span class="tool-card-tagline">Research + Citations</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge high-sch">9-12</span><span class="audience-badge both">Teachers & Students</span></div>
+                    <p class="tool-card-description">Essential for college-prep research skills. Academic mode provides scholarly sources with proper citations. Teaches responsible AI-assisted research practices.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Model research process</li><li>Teach source evaluation</li><li>Find scholarly articles</li><li>Fact-check content</li></ul></div><div class="use-column student"><h5>🎓 Students</h5><ul><li>Research papers</li><li>Find peer-reviewed sources</li><li>Build bibliographies</li><li>Verify information</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://perplexity.ai" target="_blank" class="tool-visit-link">Visit Perplexity AI</a><a href="https://www.perplexity.ai/hub/faq" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.perplexity.ai/hub" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card high">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-gemini" style="color:white;">✨</div><div class="tool-card-info"><h4><a href="https://gemini.google.com" target="_blank">Google Gemini</a></h4><span class="tool-card-tagline">Workspace Integration</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge high-sch">9-12</span><span class="audience-badge teacher">Teacher Primary</span></div>
+                    <p class="tool-card-description">Seamlessly integrated with Google Workspace. Ideal for creating comprehensive course materials, analyzing student data, and streamlining administrative tasks.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Create course content</li><li>Analyze grade data</li><li>Build presentations</li><li>Draft recommendations</li></ul></div><div class="use-column student"><h5>🎓 Students</h5><ul><li>Available in Workspace for Education</li><li>District policies apply</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://gemini.google.com" target="_blank" class="tool-visit-link">Visit Google Gemini</a><a href="https://support.google.com/gemini" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@Google" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card high">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-copilot" style="color:white;">🪟</div><div class="tool-card-info"><h4><a href="https://copilot.microsoft.com" target="_blank">Microsoft Copilot</a></h4><span class="tool-card-tagline">Microsoft 365 Integration</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge high-sch">9-12</span><span class="audience-badge teacher">Teacher Primary</span></div>
+                    <p class="tool-card-description">Full Microsoft 365 integration for professional document creation. Perfect for college and career prep, teaching students workplace-ready digital skills.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Create professional docs</li><li>Analyze Excel data</li><li>Build presentations</li><li>Write recommendations</li></ul></div><div class="use-column student"><h5>🎓 Students</h5><ul><li>Available in M365 Education</li><li>District policies apply</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://copilot.microsoft.com" target="_blank" class="tool-visit-link">Visit Microsoft Copilot</a><a href="https://support.microsoft.com/copilot" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@Microsoft365" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card high">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-magic" style="color:white;">🪄</div><div class="tool-card-info"><h4><a href="https://magicschool.ai" target="_blank">MagicSchool AI</a></h4><span class="tool-card-tagline">80+ Education Tools</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge high-sch">9-12</span><span class="audience-badge teacher">Teacher Only</span></div>
+                    <p class="tool-card-description">Advanced tools for AP courses, college prep, and specialized subjects. Create sophisticated assessments, recommendation letters, and college-level materials.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Create AP-level content</li><li>Write recommendations</li><li>Design complex rubrics</li><li>Generate DBQ questions</li></ul></div><div class="use-column student"><h5>🎓 Students</h5><ul><li>Benefit from rigorous materials</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://magicschool.ai" target="_blank" class="tool-visit-link">Visit MagicSchool AI</a><a href="https://help.magicschool.ai" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@MagicSchoolAI" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card high">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-adobe" style="color:white;">🎨</div><div class="tool-card-info"><h4><a href="https://adobe.com/education/express" target="_blank">Adobe Express</a></h4><span class="tool-card-tagline">Professional Design</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge high-sch">9-12</span><span class="audience-badge both">Teachers & Students</span></div>
+                    <p class="tool-card-description">Professional-grade design tools for portfolios, presentations, and multimedia projects. Essential for career and technical education, marketing, and media courses.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👩‍🏫 Teachers</h5><ul><li>Create course materials</li><li>Design infographics</li><li>Build video content</li><li>Make social graphics</li></ul></div><div class="use-column student"><h5>🎓 Students</h5><ul><li>Build portfolios</li><li>Create presentations</li><li>Design projects</li><li>Develop media skills</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://adobe.com/education/express" target="_blank" class="tool-visit-link">Visit Adobe Express</a><a href="https://helpx.adobe.com/express.html" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@AdobeExpress" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COLLEGE SECTION -->
+        <section id="college" class="grade-section" data-grade="college">
+            <div class="grade-section-header college">
+                <div class="grade-icon college">🏛️</div>
+                <div class="grade-section-title">
+                    <h3>College & University</h3>
+                    <p>Advanced AI integration for higher education faculty and students</p>
+                </div>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card college">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-claude" style="color:white;">🧠</div><div class="tool-card-info"><h4><a href="https://claude.ai" target="_blank">Claude AI</a></h4><span class="tool-card-tagline">Deep Analysis & Writing</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge college">College</span><span class="audience-badge both">Faculty & Students</span></div>
+                    <p class="tool-card-description">Excels at nuanced analysis, academic writing, document review, and complex reasoning. Known for thoughtful, detailed responses. Ideal for research and scholarly work.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👨‍🏫 Faculty</h5><ul><li>Develop case studies</li><li>Create complex rubrics</li><li>Analyze literature</li><li>Draft grant proposals</li></ul></div><div class="use-column student"><h5>🎓 Students</h5><ul><li>Research assistance</li><li>Writing feedback</li><li>Concept explanation</li><li>Thesis development</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://claude.ai" target="_blank" class="tool-visit-link">Visit Claude AI</a><a href="https://support.anthropic.com" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@anthropic-ai" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card college">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-chatgpt" style="color:white;">💬</div><div class="tool-card-info"><h4><a href="https://chatgpt.com" target="_blank">ChatGPT</a></h4><span class="tool-card-tagline">Versatile Assistant</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge college">College</span><span class="audience-badge both">Faculty & Students</span></div>
+                    <p class="tool-card-description">The most widely-known AI assistant with broad capabilities. Versatile for brainstorming, coding, drafting, and problem-solving.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👨‍🏫 Faculty</h5><ul><li>Generate examples</li><li>Create practice problems</li><li>Draft syllabi</li><li>Code demonstrations</li></ul></div><div class="use-column student"><h5>🎓 Students</h5><ul><li>Coding assistance</li><li>Concept exploration</li><li>Study preparation</li><li>Problem-solving</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://chatgpt.com" target="_blank" class="tool-visit-link">Visit ChatGPT</a><a href="https://help.openai.com" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@OpenAI" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card college">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-notebook" style="color:white;">📓</div><div class="tool-card-info"><h4><a href="https://notebooklm.google" target="_blank">NotebookLM</a></h4><span class="tool-card-tagline">Research & Audio Synthesis</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge college">College</span><span class="audience-badge both">Faculty & Students</span></div>
+                    <p class="tool-card-description">Upload PDFs, articles, and documents for AI-powered analysis and synthesis. The Audio Overview feature creates podcast-style discussions—perfect for literature reviews.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👨‍🏫 Faculty</h5><ul><li>Create course podcasts</li><li>Synthesize research</li><li>Analyze curricula</li><li>Cross-reference sources</li></ul></div><div class="use-column student"><h5>🎓 Students</h5><ul><li>Literature reviews</li><li>Thesis research</li><li>Study podcasts</li><li>Exam preparation</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://notebooklm.google" target="_blank" class="tool-visit-link">Visit NotebookLM</a><a href="https://support.google.com/notebooklm" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/results?search_query=NotebookLM+tutorial" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card college">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-perplexity" style="color:white;">🔍</div><div class="tool-card-info"><h4><a href="https://perplexity.ai" target="_blank">Perplexity AI</a></h4><span class="tool-card-tagline">Research + Citations</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge college">College</span><span class="audience-badge both">Faculty & Students</span></div>
+                    <p class="tool-card-description">AI-powered research engine with automatic citations. Academic Focus mode prioritizes peer-reviewed sources. Essential for scholarly research.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👨‍🏫 Faculty</h5><ul><li>Find current research</li><li>Verify claims</li><li>Model citation use</li><li>Update course content</li></ul></div><div class="use-column student"><h5>🎓 Students</h5><ul><li>Academic research</li><li>Find peer-reviewed articles</li><li>Build bibliographies</li><li>Explore topics</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://perplexity.ai" target="_blank" class="tool-visit-link">Visit Perplexity AI</a><a href="https://www.perplexity.ai/hub/faq" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.perplexity.ai/hub" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card college">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-gemini" style="color:white;">✨</div><div class="tool-card-info"><h4><a href="https://gemini.google.com" target="_blank">Google Gemini</a></h4><span class="tool-card-tagline">Workspace Integration</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge college">College</span><span class="audience-badge both">Faculty & Students</span></div>
+                    <p class="tool-card-description">Integrated into Google Workspace for seamless content creation. Generate text in Docs, analyze data in Sheets, and create presentations in Slides.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👨‍🏫 Faculty</h5><ul><li>Draft in Google Docs</li><li>Analyze gradebook data</li><li>Create presentations</li><li>Summarize feedback</li></ul></div><div class="use-column student"><h5>🎓 Students</h5><ul><li>Writing assistance</li><li>Data analysis</li><li>Presentation creation</li><li>Collaboration</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://gemini.google.com" target="_blank" class="tool-visit-link">Visit Google Gemini</a><a href="https://support.google.com/gemini" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@Google" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card college">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-copilot" style="color:white;">🪟</div><div class="tool-card-info"><h4><a href="https://copilot.microsoft.com" target="_blank">Microsoft Copilot</a></h4><span class="tool-card-tagline">Microsoft 365 Integration</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge college">College</span><span class="audience-badge both">Faculty & Students</span></div>
+                    <p class="tool-card-description">Full integration with Microsoft 365 apps. Create professional documents in Word, analyze data in Excel, design presentations in PowerPoint.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👨‍🏫 Faculty</h5><ul><li>Create course materials</li><li>Analyze assessment data</li><li>Build presentations</li><li>Draft recommendations</li></ul></div><div class="use-column student"><h5>🎓 Students</h5><ul><li>Professional documents</li><li>Data analysis</li><li>Presentation design</li><li>Resume building</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://copilot.microsoft.com" target="_blank" class="tool-visit-link">Visit Microsoft Copilot</a><a href="https://support.microsoft.com/copilot" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@Microsoft365" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card college">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-magic" style="color:white;">🪄</div><div class="tool-card-info"><h4><a href="https://magicschool.ai" target="_blank">MagicSchool AI</a></h4><span class="tool-card-tagline">80+ Education Tools</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge college">College</span><span class="audience-badge teacher">Faculty Only</span></div>
+                    <p class="tool-card-description">Comprehensive suite of 80+ AI tools designed specifically for educators. Create syllabi, assessments, rubrics, and course materials with education-focused AI.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👨‍🏫 Faculty</h5><ul><li>Design syllabi</li><li>Create rubrics</li><li>Generate assessments</li><li>Develop case studies</li></ul></div><div class="use-column student"><h5>🎓 Students</h5><ul><li>Primarily faculty-facing</li><li>Benefits from materials</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://magicschool.ai" target="_blank" class="tool-visit-link">Visit MagicSchool AI</a><a href="https://help.magicschool.ai" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@MagicSchoolAI" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card college">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-adobe" style="color:white;">🎨</div><div class="tool-card-info"><h4><a href="https://adobe.com/education/express" target="_blank">Adobe Express</a></h4><span class="tool-card-tagline">Professional Design</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge college">College</span><span class="audience-badge both">Faculty & Students</span></div>
+                    <p class="tool-card-description">Professional-grade AI design tools free for education. Create infographics, social media content, videos, and presentations.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👨‍🏫 Faculty</h5><ul><li>Course infographics</li><li>Conference posters</li><li>Video lectures</li><li>Department materials</li></ul></div><div class="use-column student"><h5>🎓 Students</h5><ul><li>Portfolio building</li><li>Presentation design</li><li>Research posters</li><li>Video projects</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://adobe.com/education/express" target="_blank" class="tool-visit-link">Visit Adobe Express</a><a href="https://helpx.adobe.com/express.html" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@AdobeExpress" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card college">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-padlet" style="color:white;">📌</div><div class="tool-card-info"><h4><a href="https://padlet.com" target="_blank">Padlet</a></h4><span class="tool-card-tagline">Collaborative Boards</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge college">College</span><span class="audience-badge both">Faculty & Students</span></div>
+                    <p class="tool-card-description">AI-powered collaborative boards for discussions, brainstorming, and resource sharing. Magic Padlet generates complete boards from prompts.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👨‍🏫 Faculty</h5><ul><li>Discussion boards</li><li>Resource collections</li><li>Peer review spaces</li><li>Brainstorming sessions</li></ul></div><div class="use-column student"><h5>🎓 Students</h5><ul><li>Group collaboration</li><li>Research sharing</li><li>Peer feedback</li><li>Portfolio curation</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://padlet.com" target="_blank" class="tool-visit-link">Visit Padlet</a><a href="https://padlet.help" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@padlet" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+
+                <div class="tool-card college">
+                    <div class="tool-card-header"><div class="tool-card-icon bg-quizlet" style="color:white;">🎴</div><div class="tool-card-info"><h4><a href="https://quizlet.com" target="_blank">Quizlet</a></h4><span class="tool-card-tagline">Magic Notes & Flashcards</span></div></div>
+                    <div class="tool-card-badges"><span class="grade-badge college">College</span><span class="audience-badge both">Faculty & Students</span></div>
+                    <p class="tool-card-description">AI-powered study tools that transform notes into flashcards, practice tests, and study guides. Magic Notes converts lecture content into study materials instantly.</p>
+                    <div class="tool-uses"><div class="tool-uses-title">How to Use</div><div class="uses-grid"><div class="use-column teacher"><h5>👨‍🏫 Faculty</h5><ul><li>Create study sets</li><li>Share terminology</li><li>Track engagement</li><li>Supplement lectures</li></ul></div><div class="use-column student"><h5>🎓 Students</h5><ul><li>Convert notes to cards</li><li>Generate practice tests</li><li>Study with Learn mode</li><li>Exam preparation</li></ul></div></div></div>
+                    <div class="tool-links-row"><a href="https://quizlet.com" target="_blank" class="tool-visit-link">Visit Quizlet</a><a href="https://help.quizlet.com" target="_blank" class="tool-help-link">Help & Support</a><a href="https://www.youtube.com/@quizlet" target="_blank" class="tool-tutorial-link">Tutorials</a></div>
+                </div>
+            </div>
+        </section>
+
         <!-- BEST PRACTICES -->
         <section id="best-practices" class="best-practices">
             <h2>🎯 Best Practices for AI in K-12 Education</h2>
@@ -517,7 +758,7 @@
                 <div class="practice-card"><h4>✓ Always Review</h4><p>AI makes mistakes. Always verify facts, check for bias, and edit outputs before sharing with students. Model critical evaluation.</p></div>
                 <div class="practice-card"><h4>✓ Be Transparent</h4><p>Tell students how you're using AI. Model responsible use and help them develop AI literacy skills they'll need for their future.</p></div>
                 <div class="practice-card"><h4>✓ Age-Appropriate Tools</h4><p>Match tools to developmental levels. Elementary students need structured, monitored experiences. Older students can handle more open-ended tools.</p></div>
-                <div class="practice-card"><h4>✓ Iterate &amp; Improve</h4><p>The best prompts come from practice. Save what works, refine over time, and share successful strategies with colleagues.</p></div>
+                <div class="practice-card"><h4>✓ Iterate & Improve</h4><p>The best prompts come from practice. Save what works, refine over time, and share successful strategies with colleagues.</p></div>
                 <div class="practice-card"><h4>✓ Focus on Learning</h4><p>AI should enhance—not replace—critical thinking. Use it to save time on routine tasks so you can focus on high-impact teaching.</p></div>
             </div>
         </section>
@@ -527,7 +768,7 @@
             <h2>🛡️ AI Safety Guidelines for K-16</h2>
             <div class="safety-grid">
                 <div class="safety-column">
-                    <h4>Privacy &amp; Data Protection</h4>
+                    <h4>Privacy & Data Protection</h4>
                     <ul>
                         <li>Never enter student names, IDs, or identifiable information into AI tools</li>
                         <li>Use school-approved tools with FERPA and COPPA compliance</li>
@@ -574,18 +815,18 @@
                     </ul>
                 </div>
                 <div class="ref-card">
-                    <h4>🔬 Research &amp; Analysis</h4>
+                    <h4>🔬 Research & Analysis</h4>
                     <ul class="ref-list">
                         <li><span class="ref-tool">Perplexity</span><span class="ref-purpose">Search with citations</span></li>
-                        <li><span class="ref-tool">NotebookLM</span><span class="ref-purpose">Source analysis &amp; podcasts</span></li>
-                        <li><span class="ref-tool">Claude AI</span><span class="ref-purpose">Deep analysis &amp; writing</span></li>
+                        <li><span class="ref-tool">NotebookLM</span><span class="ref-purpose">Source analysis & podcasts</span></li>
+                        <li><span class="ref-tool">Claude AI</span><span class="ref-purpose">Deep analysis & writing</span></li>
                         <li><span class="ref-tool">ChatGPT</span><span class="ref-purpose">Versatile assistance</span></li>
                     </ul>
                 </div>
                 <div class="ref-card">
                     <h4>🎨 Content Creation</h4>
                     <ul class="ref-list">
-                        <li><span class="ref-tool">Adobe Express</span><span class="ref-purpose">Graphics &amp; videos</span></li>
+                        <li><span class="ref-tool">Adobe Express</span><span class="ref-purpose">Graphics & videos</span></li>
                         <li><span class="ref-tool">Curipod</span><span class="ref-purpose">Interactive slides</span></li>
                         <li><span class="ref-tool">Padlet</span><span class="ref-purpose">Collaborative boards</span></li>
                         <li><span class="ref-tool">Quizlet</span><span class="ref-purpose">Study materials</span></li>
